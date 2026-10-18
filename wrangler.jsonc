@@ -1,0 +1,18 @@
+{
+  // Nicelydone Cloudflare Worker configuration.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nicelydone-cloudflare-worker",
+  "main": "src/index.js",
+  "compatibility_date": "2024-11-01",
+  // Workers Logs, invocation logs, and traces with full (1.0) head sampling
+  // for this small capture workload.
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "head_sampling_rate": 1
+    }
+  }
+}

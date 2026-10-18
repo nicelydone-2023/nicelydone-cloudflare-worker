@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+.dev.vars
+# Large R2 sample assets are uploaded to R2 via the dashboard, not deployed.
+r2-assets/
